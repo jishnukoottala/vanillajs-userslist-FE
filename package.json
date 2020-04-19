@@ -1,0 +1,27 @@
+{
+  "name": "vanillajs_user-management-app",
+  "version": "1.0.0",
+  "description": "a simple user management app with vanilla javascript",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rmdir /Q /S development  && rmdir /Q /S .cache",
+    "dev": "npm run clean && parcel src/index.html --out-dir development -p 3000",
+    "build": "parcel build src/index.html --out-dir dist --public-url ./"
+  },
+  "keywords": [
+    "vanillajs"
+  ],
+  "author": "jishnu koottala",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.9.2",
+    "axios": "^0.19.2"
+  }
+}

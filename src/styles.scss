@@ -1,0 +1,58 @@
+$primary-color: #1e8089;
+$gray1: #b1c1c0;
+$backgroundwhite: #eff1f3;
+$header: #0b3c49;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background: $gray1;
+  color: #000;
+  background-color: $backgroundwhite;
+}
+
+.container {
+  background-color: $backgroundwhite;
+}
+
+.header {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+
+  background-color: $header;
+  color: #fff;
+}
+
+.users-container {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  grid-auto-rows: auto;
+
+  grid-gap: 1rem;
+}
+
+.user-card {
+  height: 250px;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.subtitle {
+  font-weight: 500;
+}
