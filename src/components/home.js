@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Home = async () => {
-  const res = await axios.get(`${process.env.API_URL}/users`);
+  const res = await axios.get(`https://jsonplaceholder.typicode.com/users`);
   const users = res.data;
   console.log("users --> ", users);
 
